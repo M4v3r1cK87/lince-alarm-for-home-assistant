@@ -1,5 +1,9 @@
 # Lince Alarm - Integrazione Home Assistant
 
+<p align="center">
+   <img src="brand/logo@2x.png" alt="Lince Alarm for Home Assistant" width="320">
+</p>
+
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
 ![GitHub Stars][stars-shield]
@@ -13,7 +17,7 @@ Integrazione Home Assistant per il controllo e monitoraggio delle centrali d'all
 
 | Centrale | Modalità Cloud | Modalità Locale (EuroNET) | Note |
 |----------|:--------------:|:-------------------------:|:----:|
-| **EuroPlus** | ✅ | ✅ |
+| **EuroPlus** | ✅ | ✅ | E' richiesta la versione firmware 2.00I del modulo EuroNET |
 | **Gold** | ✅ (beta) | ❌ |
 | **GR868** | ❌ | ✅ | Impostare intervallo di polling ad almeno 2 secondi |
 
@@ -22,6 +26,8 @@ Integrazione Home Assistant per il controllo e monitoraggio delle centrali d'all
 ## 🆕 Modalità Locale (EuroNET)
 
 Nuova modalità che sfrutta il modulo **EuroNET** (codice LINCE 4124EURONET) per una connessione diretta alla centrale via LAN, senza passare dal cloud.
+
+> ⚠️ **IMPORTANTE**: Il modulo EuroNET deve avere una versione firmware **2.00I**. Sono state eseguite delle prove con versione firwmare 1.12 è il risultato è stato che l'integrazione era incompatibile.
 
 ### ✅ Vantaggi
 
@@ -238,7 +244,8 @@ Rilasciato sotto licenza MIT. Vedi [LICENSE](LICENSE).
 
 ## ⚠️ Disclaimer
 
-Integrazione **non ufficiale**. Non affiliata con Lince.
+Integrazione **non ufficiale**. LINCE e i relativi loghi sono marchi dei rispettivi titolari.
+Questo progetto non è affiliato, sponsorizzato o approvato da LINCE ITALIA S.r.l.
 Uso a proprio rischio e responsabilità.
 
 Il certificato SSL (`lince_cloud.pem`) è fornito solo per interoperabilità con Lince Cloud.
